@@ -11,9 +11,7 @@ from datetime import datetime
 
 def do_pack():
     date = datetime.utcnow().strftime("%Y%m%d%H%M%S")
-    print(date)
     local("sudo mkdir versions")
-    print(local)
     directory = "versions/web_static_{}.tgz".format(date)
     local("tar -cvzf {} web_static/".format(directory))
     return directory
