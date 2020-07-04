@@ -8,7 +8,9 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def hello():
-    """ function return hello hbnb """
+    """ 
+    function return hello hbnb 
+    """
     return 'Hello HBNB!'
 
 
